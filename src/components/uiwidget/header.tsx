@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import { FacebookLogoIcon, LinkedinLogoIcon, XLogoIcon, YoutubeLogoIcon } from "@phosphor-icons/react";
 
 export default function Header() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Header() {
           className="w-auto h-10 pl-5"
         />
       </section>
-      <section className="flex items-center justify-end p-4  gap-4">
+      <section className="flex items-center justify-end p-4 gap-4">
         <div>Home</div>
         <div>About</div>
         <div>Experience</div>
@@ -43,6 +44,11 @@ export default function Header() {
         <div>Skills</div>
         <div>Education & Certifications</div>
         <button className="bg-background text-foreground font-head cursor-pointer hover:brightness-80 duration-300 px-2 rounded-xl">Contact</button>
+        <button onClick={() => window.location.href="www.facebook.com"}><FacebookLogoIcon size={28} className="hover:text-white text-gray-400 cursor-pointer duration-300" /></button>
+        <button onClick={() => window.location.href="www.x.com"}>       <XLogoIcon        size={28} className="hover:text-white text-gray-400 cursor-pointer duration-300" /></button>
+        <button onClick={() => window.location.href="www.youtube.com"}> <YoutubeLogoIcon  size={28} className="hover:text-white text-gray-400 cursor-pointer duration-300" /></button>
+        <button onClick={() => window.location.href="www.linked.com"}>  <LinkedinLogoIcon size={28} className="hover:text-white text-gray-400 cursor-pointer duration-300" /></button>
+
       </section>
     </header>
   );

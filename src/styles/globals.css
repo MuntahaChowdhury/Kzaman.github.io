@@ -113,3 +113,13 @@ header div:hover::after {
 .rise {
   animation: rise 1s ease-out forwards;
 }
+
+/* All bullets */
+.swiper-pagination-bullet {
+  background-color: #9ca3af !important; /* gray */
+}
+/* Active bullet */
+/* .swiper-pagination-bullets-active {
+  background-color: #ffffff !important; /* white */
+/* } */
+/* class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" */
