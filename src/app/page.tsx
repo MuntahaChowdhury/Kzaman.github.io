@@ -11,6 +11,13 @@ export default function Home() {
       <HeroImage />
       <Photo />
       <QuickStats />
+      <pre>
+        To be added:
+         - Projects
+         - Skills
+         - Contact form
+         - Footer
+      </pre>
 
     </div>
   );
