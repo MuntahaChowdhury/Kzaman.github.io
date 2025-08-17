@@ -1,0 +1,45 @@
+#214967
+#2A5A78
+#FFFFFF
+#102F41
+#3B9DBB
+
+
+#157F1F
+#4CB963
+#FFFFFF
+#102F41
+#8C4843
+
+
+
+#214967
+#2A5A78
+#FFFFFF
+#102F41
+#8C4843
+
+
+#1a1b41
+#717A7A
+#0E0E14
+#9ac2c5
+#165054
+
+
+
+#1A1B41 → headings, hero text, section titles.
+#1F1F2A → main background.
+#8A8F8F → paragraphs, small text, secondary info.
+#9AC2C5 → primary buttons, links, icons.
+#165054 → card backgrounds, hover states, subtle accents.
+#FFC66D → optional CTA highlights, very small pops to guide attention.
+
+
+
+Background      #F5F5F5
+Headers         #1A1B41
+Body text       #333333
+Buttons / links #165054
+Cards / accents #9AC2C5
+CTA             #FFC66D
