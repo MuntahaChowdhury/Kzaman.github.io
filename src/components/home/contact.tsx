@@ -4,14 +4,14 @@ import { FacebookLogoIcon, LinkedinLogoIcon, XLogoIcon, YoutubeLogoIcon } from "
 
 export default function ContactForm() {
     return (
-        <section className="relative border-4 ml-[10vw] w-3/4 ">
+        <section className="relative border-4 mx-2 md:mx-0 md:ml-[10vw] md:w-3/4 ">
             <ContactInfoPart />
             <div className="bg-background brightness-90 p-10">
                 <h1 className="text-4xl font-head mb-2">Contact Me</h1>
-                <p className="w-2/5 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget bibendum leo. Ut quis convallis lectus, ac dictum nisi</p>
+                <p className="md:w-2/5 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget bibendum leo. Ut quis convallis lectus, ac dictum nisi</p>
 
 
-                <form className="w-3/5 flex flex-col gap-4 mt-6 text-foreground">
+                <form className="md:w-3/5 flex flex-col gap-4 mt-6 text-foreground">
                     <div className="flex gap-2 w-full">
                         <input
                             type="text"
@@ -55,7 +55,7 @@ export default function ContactForm() {
 
 function ContactInfoPart() {
     return (
-        <div className="absolute top-1/2 right-0 translate-x-16 -translate-y-1/2 altbody px-6 py-8 z-20">
+        <div className="hidden md:block absolute top-1/2 right-0 translate-x-16 -translate-y-1/2 altbody px-6 py-8 z-20">
             <div>
                 <h2 className="font-bold font-serif">Email:</h2>
                 <p>engrmkchow@gmail.com</p>

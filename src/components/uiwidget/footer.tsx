@@ -7,8 +7,8 @@ export default function Footer() {
     return (
         <footer className="altbody">
 
-            <section className="p-5 pr-14 pl-10 grid grid-cols-3">
-                <div className="text-3xl tracking-wide font-bold flex items-center">
+            <section className="p-5 md:pr-14 md:pl-10 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-0">
+                <div className="text-3xl tracking-wide font-bold flex md:items-center">
                     <Image
                         src={'/images/trlogo.png'}
                         alt="logo"
@@ -18,12 +18,12 @@ export default function Footer() {
                     />
                 </div>
                 <div className="flex flex-col justify-center gap-2">
-                    <q className="font-scripty text-lg">
+                    <q className="font-scripty text-sm md:text-lg">
                         A quote here to fill the space and make it comforting and personal.
                     </q>
                     <cite className="text-xs italic brightness-90">- First Name, Last</cite>
                 </div>
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col items-end col-span-2 md:col-span-1 mt-4 md:mt-0">
                     <div className="flex space-x-2 text-xs mt-1">
                         <p className="font-bold font-serif">Email:</p>
                         <a href="mailto:engrmkchow@gmail.com">engrmkchow@gmail.com</a>
