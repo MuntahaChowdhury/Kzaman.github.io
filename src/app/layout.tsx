@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,  } from "next/font/google";
+import { Geist, Geist_Mono, Amarante, Combo  } from "next/font/google";
 import "@/styles/globals.css";
+
+const amarante = Amarante({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-amarante",
+});
+
+const combo = Combo({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-combo",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${amarante.variable} ${combo.variable} antialiased`}>
         {children}
       </body>
     </html>
