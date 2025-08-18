@@ -1,7 +1,9 @@
+import ContactForm from "@/components/home/contact";
 import HeroImage from "@/components/home/hero";
 import Photo from "@/components/home/photo";
 import QuickStats from "@/components/home/quickstats";
 import WorksSnippet from "@/components/home/works";
+import Footer from "@/components/uiwidget/footer";
 import Header from "@/components/uiwidget/header";
 
 export default function Home() {
@@ -14,8 +16,8 @@ export default function Home() {
       <QuickStats />
       <WorksSnippet />
          - Skills
-         - Contact form
-         - Footer
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
