@@ -20,14 +20,14 @@ export default function WorksSnippet() {
     const swiperRef = useRef<SwiperType | null>(null);
 
     return (
-        <section className="relative altbody p-6 py-12">
+        <section className="relative p-6 py-12">
             <div className="absolute inset-0 bg-[url('/images/works.jpg')] bg-cover bg-center filter brightness-30"></div>
             <div className="relative z-40 w-full px-4 md:px-20">
 
                 <div className="hidden md:flex justify-between items-center w-full">
                     <div onClick={() => swiperRef.current?.slidePrev()} className="text-4xl font-extrabold text-white cursor-pointe w-fit"> &#8592; </div>
                     <div className="text-center space-y-3">
-                        <h1 className="text-6xl text-background font-head font-thin">My Works</h1>
+                        <h1 className="text-6xl text-[#e3e0e0] font-head font-thin">My Works</h1>
                         <p className="w-74 text-md leading-6 italic text-gray-300 font-serif">
                             Small Description over here that would span 3 lines. Just a bit more description should be fine.
                         </p>
@@ -36,7 +36,7 @@ export default function WorksSnippet() {
                 </div>
 
                 <div className="md:hidden flex flex-col items-center justify-center w-full text-center space-y-3 ">
-                    <h1 className="text-6xl font-head font-thin">My Works</h1>
+                    <h1 className="text-6xl font-head text-[#e3e0e0] font-thin">My Works</h1>
                     <p className="w-40 md:w-74 text-md leading-6 italic text-gray-300 font-serif">
                         Small Description over here that would span 3 lines. Just a bit more description should be fine.
                     </p>

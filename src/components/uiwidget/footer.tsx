@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="altbody">
+        <footer className="bg-[#333333]">
 
             <section className="p-5 md:pr-14 md:pl-10 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-0">
                 <div className="text-3xl tracking-wide font-bold flex md:items-center">
