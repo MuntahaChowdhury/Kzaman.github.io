@@ -1,6 +1,7 @@
 "use client"
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperType } from "swiper"; // Import Swiper type
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -16,8 +17,7 @@ export default function WorksSnippet() {
     ];
 
     // refs for custom arrows
-    const v_prevRef = useRef<HTMLDivElement>(null);
-    const v_nextRef = useRef<HTMLDivElement>(null);
+    const swiperRef = useRef<SwiperType | null>(null);
 
     return (
         <section className="relative altbody p-6 py-12">
@@ -25,14 +25,14 @@ export default function WorksSnippet() {
             <div className="relative z-40 w-full px-4 md:px-20">
 
                 <div className="hidden md:flex justify-between items-center w-full">
-                    <div ref={v_prevRef} className="text-4xl font-extrabold text-white cursor-pointe w-fit"> &#8592; </div>
+                    <div onClick={() => swiperRef.current?.slidePrev()} className="text-4xl font-extrabold text-white cursor-pointe w-fit"> &#8592; </div>
                     <div className="text-center space-y-3">
                         <h1 className="text-6xl text-background font-head font-thin">My Works</h1>
                         <p className="w-74 text-md leading-6 italic text-gray-300 font-serif">
                             Small Description over here that would span 3 lines. Just a bit more description should be fine.
                         </p>
                     </div>
-                    <div ref={v_nextRef} className="text-4xl font-extrabold text-white cursor-pointer w-fit"> &#8594; </div>
+                    <div onClick={() => swiperRef.current?.slideNext()} className="text-4xl font-extrabold text-white cursor-pointer w-fit"> &#8594; </div>
                 </div>
 
                 <div className="md:hidden flex flex-col items-center justify-center w-full text-center space-y-3 ">
@@ -41,8 +41,8 @@ export default function WorksSnippet() {
                         Small Description over here that would span 3 lines. Just a bit more description should be fine.
                     </p>
                     <div className="flex justify-between gap-20">
-                        <div ref={v_prevRef} className="text-4xl font-extrabold text-white cursor-pointer"> &#8592; </div>
-                        <div ref={v_nextRef} className="text-4xl font-extrabold text-white cursor-pointer"> &#8594; </div>
+                        <div onClick={() => swiperRef.current?.slidePrev()} className="text-4xl font-extrabold text-white cursor-pointer"> &#8592; </div>
+                        <div onClick={() => swiperRef.current?.slideNext()} className="text-4xl font-extrabold text-white cursor-pointer"> &#8594; </div>
                     </div>
                 </div>
 
@@ -51,37 +51,14 @@ export default function WorksSnippet() {
                         modules={[Navigation, Pagination, Autoplay]}
                         spaceBetween={40}
                         breakpoints={{
-                            0: {       // mobile
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                            },
-                            640: {     // small screens (sm)
-                                slidesPerView: 2,
-                                spaceBetween: 30,
-                            },
-                            1024: {    // large screens (lg+)
-                                slidesPerView: 3,
-                                spaceBetween: 40,
-                            },
+                            0: {slidesPerView: 1,spaceBetween: 20,},
+                            640: {slidesPerView: 2,spaceBetween: 30,},
+                            1024: {slidesPerView: 3,spaceBetween: 40,},
                         }}
                         loop={true}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
-                        navigation={{
-                            prevEl: v_prevRef.current,
-                            nextEl: v_nextRef.current,
-                        }}
                         pagination={{ clickable: true }}
-                        onSwiper={(swiper) => {
-                            // initialize navigation after refs are rendered
-                            if (swiper.params.navigation) {
-                                // @ts-expect-error --doesn't want to listen
-                                swiper.params.navigation.prevEl = v_prevRef.current;
-                                // @ts-expect-error --doesn't want to listen
-                                swiper.params.navigation.nextEl = v_nextRef.current;
-                                swiper.navigation.init();
-                                swiper.navigation.update();
-                            }
-                        }}
+                        onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
                         className="h-full"
                     >
                         {v_slides.map((slide, i) => (
