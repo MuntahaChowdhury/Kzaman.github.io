@@ -1,52 +1,62 @@
 "use client"
 import { FacebookLogoIcon, LinkedinLogoIcon, XLogoIcon, YoutubeLogoIcon } from "@phosphor-icons/react";
+import Image from "next/image";
 
 
 export default function ContactForm() {
     return (
-        <section className="relative border-4 mx-2 md:mx-0 md:ml-[10vw] md:w-3/4 ">
-            <ContactInfoPart />
-            <div className="bg-background brightness-90 p-10">
-                <h1 className="text-4xl font-head mb-2">Contact Me</h1>
-                <p className="md:w-2/5 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget bibendum leo. Ut quis convallis lectus, ac dictum nisi</p>
+        <section className="relative py-16">
+            <div className="absolute top-0 left-0 w-full h-full -z-1 opacity-10">
+                <Image
+                    src={'/images/contact.jpg'}
+                    alt=""
+                    fill
+                />
+            </div>
+            <div className="relative border-4 mx-2 md:mx-0 md:mx-auto md:w-2/3">
+                <ContactInfoPart />
+                <div className="bg-background brightness-90 p-10">
+                    <h1 className="text-4xl font-head mb-2">Contact Me</h1>
+                    <p className="md:w-3/5 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget bibendum leo. Ut quis convallis lectus, ac dictum nisi</p>
 
 
-                <form className="md:w-3/5 flex flex-col gap-4 mt-6 text-foreground">
-                    <div className="flex gap-2 w-full">
+                    <form className="md:w-3/4 flex flex-col gap-4 mt-6 text-foreground">
+                        <div className="flex gap-2 w-full">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Name"
+                                required
+                                className="bg-white text-black p-2 text-sm w-full"
+                            />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required
+                                className="bg-white text-black p-2 text-sm w-full"
+                            />
+                        </div>
                         <input
                             type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Name"
+                            id="subject"
+                            name="subject"
+                            placeholder="Subject"
                             required
-                            className="bg-white text-black p-2 text-sm w-full"
+                            className="bg-white text-black p-2 text-sm"
                         />
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Email"
+                        <textarea
+                            id="mesage"
+                            name="mesage"
+                            placeholder="Your message here"
+                            rows={4}
                             required
-                            className="bg-white text-black p-2 text-sm w-full"
+                            className="bg-white text-black p-2 text-sm italic"
                         />
-                    </div>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                        className="bg-white text-black p-2 text-sm"
-                    />
-                    <textarea
-                        id="mesage"
-                        name="mesage"
-                        placeholder="Your message here"
-                        rows={4}
-                        required
-                        className="bg-white text-black p-2 text-sm italic"
-                    />
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
     )
@@ -55,7 +65,7 @@ export default function ContactForm() {
 
 function ContactInfoPart() {
     return (
-        <div className="hidden md:block absolute top-1/2 right-0 translate-x-16 -translate-y-1/2 altbody px-6 py-8 z-20">
+        <div className="hidden md:block absolute top-1/2 right-0 translate-x-10 -translate-y-1/2 altbody px-6 py-8 z-20">
             <div>
                 <h2 className="font-bold font-serif">Email:</h2>
                 <p>engrmkchow@gmail.com</p>

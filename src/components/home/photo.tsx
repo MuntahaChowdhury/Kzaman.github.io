@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Photo() {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-3 min-h-40 gap-4 px-4 md:px-6 lg:px-16 xl:px-24 rise">
+        <section className="grid grid-cols-1 md:grid-cols-3 min-h-40 gap-4 px-4 md:px-6 lg:px-16 xl:px-24 rise mt-10">
             <div className="relative w-full h-[50vh] md:h-auto col-span-1">
                 <Image
                     src="/images/pfp.jpg"
@@ -29,7 +29,7 @@ export default function Photo() {
                 <div className="flex flex-col space-y-2 mt-8">
                     <button className="bg-buttons p-2 text-background rounded-3xl w-full md:w-80 hover:brightness-80 cursor-pointer">Download Resume</button>
                     <button className="bg-cards p-2 rounded-3xl w-full md:w-80 hover:brightness-80 cursor-pointer">View Projects</button>
-                    <button className="bg-cta p-2 rounded-3xl w-full md:w-80 hover:brightness-80 cursor-pointer">Contact Me</button>
+                    <button className="bg-cta p-2 rounded-3xl w-full md:w-80 hover:brightness-80 cursor-pointer">Learn More</button>
                 </div>
             </div>
         </section>

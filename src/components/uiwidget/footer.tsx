@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className="bg-[#333333]">
 
-            <section className="p-5 md:pr-14 md:pl-10 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-0">
+            <section className="p-5 md:pr-14 md:pl-10 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-0 text-[#e3e0e0]">
                 <div className="text-3xl tracking-wide font-bold flex md:items-center">
                     <Image
                         src={'/images/trlogo.png'}
@@ -23,7 +23,7 @@ export default function Footer() {
                     </q>
                     <cite className="text-xs italic brightness-90">- First Name, Last</cite>
                 </div>
-                <div className="flex flex-col items-end col-span-2 md:col-span-1 mt-4 md:mt-0">
+                <div className="flex flex-col items-end col-span-2 md:col-span-1 mt-4 md:mt-0 ">
                     <div className="flex space-x-2 text-xs mt-1">
                         <p className="font-bold font-serif">Email:</p>
                         <a href="mailto:engrmkchow@gmail.com">engrmkchow@gmail.com</a>
