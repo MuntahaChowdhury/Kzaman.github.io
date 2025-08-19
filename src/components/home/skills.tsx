@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function SkillSummary() {
     return (
-        <section className="py-12 px-16">
+        <section className="py-12 px-5 md:px-16">
             <h1 className="text-4xl font-head text-headers font-bold">Qualifications, Experience & Skills</h1>
 
-            <div className="grid grid-cols-3 gap-16 mt-5 px-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-5 px-5">
 
                 {/* ----------------------------------- Certifications ------------------------------------------- */}
                 <div className="p-4 pb-0 bg-black/5 overflow-y-hidden">
