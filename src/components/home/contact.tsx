@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function ContactForm() {
     return (
         <section className="relative py-16">
-            <div className="absolute top-0 left-0 w-full h-full -z-1 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full -z-1 opacity-20">
                 <Image
                     src={'/images/contact.jpg'}
                     alt=""
