@@ -2,7 +2,7 @@ import ContactForm from "@/components/home/contact";
 import HeroImage from "@/components/home/hero";
 import Photo from "@/components/home/photo";
 import QuickStats from "@/components/home/quickstats";
-import SkillSummary from "@/components/home/skills";
+import SkillSummary from "@/components/home/skillsExpQual";
 import WorksSnippet from "@/components/home/works";
 
 export default function Home() {

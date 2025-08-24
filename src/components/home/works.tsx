@@ -72,7 +72,7 @@ export default function WorksSnippet() {
                                         <h1 className="text-4xl text-left font-bold text-headers tracking-tighter">{slide.title}</h1>
                                         <p className="mt-2 text-left text-md italic text-foreground">{slide.description}</p>
                                     </div>
-                                    <button className="bg-buttons px-2 py-1 font-head rounded-3xl cursor-pointer hover:brightness-70 hover:outline-offset-3 hover:outline-2 outline-buttons duration-100">Learn More</button>
+                                    <button className="bg-buttons px-2 py-1 font-[amarante] rounded-3xl cursor-pointer hover:brightness-70 hover:outline-offset-3 hover:outline-2 outline-buttons duration-100">Learn More</button>
                                 </div>
                             </SwiperSlide>
                         ))}
