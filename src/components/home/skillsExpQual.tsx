@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function SkillSummary() {
     return (
-        <section className="py-12 px-5 md:px-16">
-            <h1 className="text-4xl font-head text-headers font-bold">Qualifications, Experience & Skills</h1>
+        <section className="py-6 mb-10 px-5 md:px-16 relative z-50">
+            <h1 className="text-4xl">A Look At My Experience</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-5 px-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-10 px-5">
 
                 {/* ----------------------------------- Certifications ------------------------------------------- */}
                 <div className="p-4 pb-0 bg-black/5 overflow-y-hidden">
@@ -19,21 +19,21 @@ export default function SkillSummary() {
                         <div className="rounded-full w-10 h-10 bg-cards"></div>
                         <div>
                             <h3 className="font-bold text-xl">2025</h3>
-                            <p className="text-sm">PMP Certification</p>
+                            <p className="text-sm h-10 line-clamp-2">PMP Certification</p>
                         </div>
 
                         {/* ----------------------------------- */}
                         <div className="rounded-full w-10 h-10 bg-cards"></div>
                         <div>
                             <h3 className="font-bold text-xl">2014</h3>
-                            <p className="text-sm">Master&apos;s Degree, Computer Science</p>
+                            <p className="text-sm h-10 line-clamp-2">Master&apos;s Degree, Computer Science</p>
                         </div>
 
                         {/* ----------------------------------- */}
                         <div className="rounded-full w-10 h-10 bg-cards"></div>
                         <div>
                             <h3 className="font-bold text-xl">1995 - 2000</h3>
-                            <p className="text-sm">Bachelor&apos;s Degree, Computer Science</p>
+                            <p className="text-sm h-10 line-clamp-2">Bachelor&apos;s Degree, Computer Science</p>
                         </div>
 
                         {/* ----------------------------------- */}
@@ -54,7 +54,7 @@ export default function SkillSummary() {
                         <div className="rounded-full w-10 h-10 bg-headers"></div>
                         <div>
                             <h3 className="font-bold text-xl">2022 - 2025</h3>
-                            <p className="text-sm">
+                            <p className="text-sm h-10 line-clamp-2">
                                 Something about Job 4, <br />
                                 Position, Saskatoon, Saskatchewan
                             </p>
@@ -64,7 +64,7 @@ export default function SkillSummary() {
                         <div className="rounded-full w-10 h-10 bg-headers"></div>
                         <div>
                             <h3 className="font-bold text-xl">2018 - 2022</h3>
-                            <p className="text-sm">
+                            <p className="text-sm h-10 line-clamp-2">
                                 Something about Job 3, <br />
                                 Position, Dhaka, Bangladesh
                             </p>
@@ -74,7 +74,7 @@ export default function SkillSummary() {
                         <div className="rounded-full w-10 h-10 bg-headers"></div>
                         <div>
                             <h3 className="font-bold text-xl">2000 - 2018</h3>
-                            <p className="text-sm">
+                            <p className="text-sm h-10 line-clamp-2">
                                 Something about Job 2, <br />
                                 Position, Dhaka, Bangladesh
                             </p>
@@ -109,6 +109,8 @@ export default function SkillSummary() {
                     </div>
                 </div>
             </div>
+
+            {/* <div className="absolute -top-4 -right-40 w-[50vw] h-[55vw] bg-transparent shadow-[8px_-8px_10px_var(--foreground)] opacity-60 -z-2 rotate-50" /> */}
 
         </section>
     )

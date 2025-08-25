@@ -3,7 +3,7 @@
 export default function SendMessageBox() {
     return (
         <form className="flex flex-col gap-4 text-foreground bg-background brightness-90 p-10 pt-8 border-4 border-foreground shadow-2xl">
-            <h1 className="text-4xl font-head mb-2">Send Me a Message </h1>
+            <h1 className="text-4xl  mb-2">Send Me a Message </h1>
             <div className="flex gap-2 w-full">
                 <input
                     type="text"

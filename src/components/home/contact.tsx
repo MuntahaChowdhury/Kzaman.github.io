@@ -5,18 +5,26 @@ import Image from "next/image";
 
 export default function ContactForm() {
     return (
-        <section className="relative py-16">
-            <div className="absolute top-0 left-0 w-full h-full -z-1 opacity-20">
+        <section className="relative py-16 overflow-hidden">
+            {/* <div className="absolute top-0 left-0 w-full h-full -z-1 opacity-20">
                 <Image
                     src={'/images/contact.jpg'}
                     alt=""
                     fill
                 />
+            </div> */}
+            <div className="absolute top-1/4 left-1/4 -z-1 opacity-20">
+                <Image
+                    src={'/images/hero2.jpg'}
+                    alt=""
+                    width={500}
+                    height={500}
+                />
             </div>
             <div className="relative border-4 mx-2 md:mx-0 md:mx-auto md:w-2/3">
                 <ContactInfoPart />
-                <div className="bg-background brightness-90 p-10">
-                    <h1 className="text-4xl font-head mb-2">Contact Me</h1>
+                <div className="bg-cards p-10">
+                    <h1 className="text-4xl !text-foreground mb-2">Contact Me</h1>
                     <p className="md:w-3/5 text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget bibendum leo. Ut quis convallis lectus, ac dictum nisi</p>
 
 

@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function EducationSection() {
     return (
         <section className="pt-2 pb-20 px-4 md:pl-20 md:pr-10">
-            <div className="text-5xl text-foreground font-bold font-head mb-10">
+            <div className="text-5xl text-foreground font-bold  mb-10">
                 <h2>Education</h2>
             </div>
 
@@ -21,7 +21,7 @@ export default function EducationSection() {
                             <p className="text-sm text-foreground opacity-70">Highilighted courses: Database, Software Development, Algorithms and Data Analysis</p>
                             <p className="text-sm text-foreground opacity-70">Awards: Merit list, In course scholarship</p>
                             <p className="text-sm text-foreground opacity-70">Leadership roles: Name some club or organization here</p>
-                            <p className="text-sm text-foreground opacity-70">Projects: Name One here <button className="bg-foreground pt-0 px-2 pb-0.5 text-xs font-head rounded-3xl cursor-pointer font-bold hover:brightness-70 duration-100 text-background">Learn more</button> or Specialization: Database & Backend Development</p>
+                            <p className="text-sm text-foreground opacity-70">Projects: Name One here <button className="bg-foreground pt-0 px-2 pb-0.5 text-xs  rounded-3xl cursor-pointer font-bold hover:brightness-70 duration-100 text-background">Learn more</button> or Specialization: Database & Backend Development</p>
                         </div>
                         <div className="flex justify-end items-end">
                             <Image
@@ -44,7 +44,7 @@ export default function EducationSection() {
                             <p className="text-sm text-foreground opacity-70">Highilighted courses: Database, Software Development, Algorithms and Data Analysis</p>
                             <p className="text-sm text-foreground opacity-70">Awards: Merit list, In course scholarship</p>
                             <p className="text-sm text-foreground opacity-70">Leadership roles: Name some club or organization here</p>
-                            <p className="text-sm text-foreground opacity-70">Projects: Name One here <button className="bg-foreground pt-0 px-2 pb-0.5 text-xs font-head rounded-3xl cursor-pointer font-bold hover:brightness-70 duration-100 text-background">Learn more</button> or Specialization: Database & Backend Development</p>
+                            <p className="text-sm text-foreground opacity-70">Projects: Name One here <button className="bg-foreground pt-0 px-2 pb-0.5 text-xs  rounded-3xl cursor-pointer font-bold hover:brightness-70 duration-100 text-background">Learn more</button> or Specialization: Database & Backend Development</p>
                         </div>
                         <div className="flex justify-end items-end">
                             <Image

@@ -1,26 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Amarante, Combo, Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Amarante, Playfair_Display, Source_Sans_3 } from "next/font/google";
+// import { Geist, Geist_Mono, Amarante, Playfair_Display, Alice } from "next/font/google";
 import "@/styles/globals.css";
 import Footer from "@/components/uiwidget/footer";
 import Header from "@/components/uiwidget/header";
 import BackToTop from "@/components/uiwidget/toTop";
 
-const amarante = Amarante({
+
+
+const head = Playfair_Display({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-amarante",
+  variable: "--font-head",
 });
 
-const combo = Combo({
+const body = Source_Sans_3({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-combo",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-playfair",
+  variable: "--font-body",
 });
 
 const geistSans = Geist({
@@ -33,6 +30,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const amarante = Amarante({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-amarante",
+});
+
+
+
 export const metadata: Metadata = {
   title: "Md Kzaman Chowdhury",
   description: "Portfolio",
@@ -41,7 +46,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${amarante.variable} ${combo.variable} ${playfair.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${amarante.variable} ${head.variable} ${body.variable} antialiased`}>
 
         <Header />
         <BackToTop />

@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Skills() {
     return (
         <section className="px-4 md:px-20 py-8">
-            <h1 className="text-4xl font-head text-headers font-bold">Skills</h1>
+            <h1 className="text-4xl  text-headers">Skills</h1>
 
 
             {/* ----------------------------------- Tools & Skills ------------------------------------------- */}
