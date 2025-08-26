@@ -1,11 +1,21 @@
 "use client"
 
+import Image from "next/image"
+
 
 export default function PageHead({ text }: { text: string }) {
     return (
-        <section className="relative bg-[url('/images/headbg.jpg')] bg-cover bg-center">
-            <h1 className="relative top-0 left-0 text-4xl text-center text-white  mb-10 pt-28 pb-10 shadow-xl border-b-2 border-white z-60">{text}</h1>
-            <div className="bg-headers absolute top-0 left-0 h-full w-full opacity-95 z-10" />
+        <section className="relative rise">
+            <h1 className="relative top-0 left-0 text-5xl text-left pt-24 pb-16 px-16">{text}</h1>
+            <div className="absolute -top-10 -z-80 -right-15 rotate-115 opacity-20 dark:invert-94">
+                <Image
+                    src={'/images/hero3.jpg'}
+                    alt=""
+                    width={700}
+                    height={700}
+                    className=""
+                />
+            </div>
         </section>
 
     )

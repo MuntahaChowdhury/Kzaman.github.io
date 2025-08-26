@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function SkillSummary() {
     return (
-        <section className="py-6 mb-10 px-5 md:px-16 relative z-50">
-            <h1 className="text-4xl">A Look At My Experience</h1>
+        <section className="py-6 mb-10 px-5 md:px-20 relative z-50">
+            <h1 className="text-4xl ml-5">A Look At My Experience</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-10 px-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mt-10 px-5 relative z-10">
 
                 {/* ----------------------------------- Certifications ------------------------------------------- */}
                 <div className="p-4 pb-0 bg-black/5 overflow-y-hidden">
@@ -111,6 +111,7 @@ export default function SkillSummary() {
             </div>
 
             {/* <div className="absolute -top-4 -right-40 w-[50vw] h-[55vw] bg-transparent shadow-[8px_-8px_10px_var(--foreground)] opacity-60 -z-2 rotate-50" /> */}
+
 
         </section>
     )

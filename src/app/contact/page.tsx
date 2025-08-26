@@ -11,7 +11,7 @@ export default function ContactPage() {
 
             {/* Top bg title */}
             <div className="relative bg-[url('/images/contact/bg.jpg')] bg-cover bg-center h-[40vh] brightness-65">
-                <h1 className="absolute z-10 top-[20vh] left-0  text-5xl pl-10 text-white">Let&apos;s Connect</h1>
+                <h1 className="absolute z-10 top-[20vh] left-0  text-5xl pl-10 !font-normal !text-white">Let&apos;s Connect</h1>
             </div>
 
             {/* Boxes */}

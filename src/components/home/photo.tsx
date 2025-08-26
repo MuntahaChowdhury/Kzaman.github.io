@@ -32,16 +32,17 @@ export default function Photo() {
                     alt="Picture"
                     width={270}
                     height={270}
-                    className="object-cover shadow-[15px_15px_0px_var(--headers)] mx-auto outline-2 outline-offset-3 outline-foreground -translate-y-8"
+                    className="object-cover mx-auto h-full -translate-y-8
+                               shadow-[15px_15px_0px_var(--headers)] outline-2 outline-offset-3 outline-foreground"
                 />
             </div>
 
-            <div className="absolute top-48 -left-20 rotate-200 opacity-30 -z-10">
+            <div className="absolute top-30 -left-100 rotate-200 opacity-10 -z-10 dark:invert-94">
                 <Image
                     src={'/images/hero2.jpg'}
                     alt=""
-                    width={600}
-                    height={400}
+                    width={900}
+                    height={900}
                 />
             </div>
             

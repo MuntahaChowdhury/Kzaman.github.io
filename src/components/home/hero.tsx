@@ -5,13 +5,13 @@ import Image from "next/image"
 
 export default function HeroImage() {
     return (
-        <section id="banner" className="relative min-h-[90vh]">
+        <section id="banner" className="relative min-h-[90vh] rise">
             <div className="h-[100vh] flex flex-col space-y-2 items-center justify-center px-32 py-20 relative z-10">
-                <h2 className="font-extrabold text-headers text-3xl w-full mt-40">Hi, I&apos;m</h2>
+                <h2 className="font-extrabold text-headers text-3xl w-full mt-36">Hi, I&apos;m</h2>
                 <p className="text-5xl w-full capitalize font-extrabold">Mohammad Khalequzzaman <br /> Chowdhury</p>
                 <p className="text-xl text-gray-400 w-full flex items-end">Welcome to my Portfolio! <GlobeIcon size={30} color="lightgray" /></p>
             </div>
-            <div className="absolute -top-40 right-0 opacity-30">
+            <div className="absolute -top-40 right-0 opacity-30 dark:invert-93">
                 <Image
                     src={'/images/hero2.jpg'}
                     alt=""

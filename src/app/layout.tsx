@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${amarante.variable} ${head.variable} ${body.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${amarante.variable} ${head.variable} ${body.variable} antialiased w-full overflow-x-hidden`}>
 
         <Header />
         <BackToTop />

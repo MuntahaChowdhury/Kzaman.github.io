@@ -7,15 +7,15 @@ export default function ContactBoxes() {
             <div className="order-last md:order-first"></div>
             <div className="p-4 w-40 md:w-52 bg-[#333333] text-xs md:text-md flex flex-col items-center justify-start space-y-3">
                 <EnvelopeOpenIcon weight="fill" color="#C2BCBC" size={40} />
-                <p className="text-center">engrmkchow@gmail.com</p>
+                <p className="text-center"><a href="mailto:engrmkchow@gmail.com">engrmkchow@gmail.com</a></p>
             </div>
             <div className="p-4 w-40 md:w-52 bg-[#333333] text-xs md:text-md flex flex-col items-center justify-start space-y-3">
                 <PhoneCallIcon weight="fill" color="#C2BCBC" size={40} />
-                <p className="text-center">+1 (639) 318-7855</p>
+                <p className="text-center"><a href="telto:16393187855">+1 (639) 318-7855</a></p>
             </div>
             <div className="p-4 w-40 md:w-52 bg-[#333333] text-xs md:text-md flex flex-col items-center justify-start space-y-3">
                 <LinkedinLogoIcon weight="fill" color="#C2BCBC" size={40} />
-                <p className="text-center">linkedin.com/ md-kzaman-chowdhury</p>
+                <p className="text-center"><a target="_blank" href="https://linkedin.com/in/mohd-khalequzzaman-chowdhury-2a279b57">linkedin.com/in/mohd-khalequzzaman-chowdhury-2a279b57</a></p>
             </div>
             <div className="pl-4 w-52 flex flex-col justify-start md:justify-end space-y-3">
                 <h2 className="text-lg font-bold text-foreground">Socials</h2>

@@ -5,10 +5,10 @@ Pages
 1 Home (Landing Page)
 7 Contact
 6 Education & Certifications
+3 Experience - Timeline of career
 
 
 2 About
-3 Experience - Timeline of career
 4 Projects
 5 Skills & Expertise
 8 Blog/Insights
@@ -47,6 +47,13 @@ Pages
         ◽ Core professional values (e.g. accuracy, leadership, innovation).
     - Specializations → bullet list of his focus areas.
     - Personal angle → 1–2 sentences about interests, philosophy, or what motivates him.
+    
+    - My Story → career journey + personal background.
+    - Philosophy → guiding values / leadership style.
+    - Specialization Areas → main expertise or focus areas.
+    - Interests & Hobbies → to humanize the profile.
+    - Vision for the Future → where he’s headed / what motivates him.
+    - (Optional) Community & Mentorship → if he mentors, volunteers, or supports causes.
 
 ### Sections:
     - Career Overview

@@ -10,10 +10,10 @@ import Image from "next/image";
 
 export default function WorksSnippet() {
     const v_slides = [
-        { title: "Some Title Here", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/project1.jpg" },
-        { title: "Some Title Here Maybe Longer", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/project2.jpg" },
-        { title: "Some Title", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/project3.jpg" },
-        { title: "Some Title Here", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/project4.jpg" },
+        { title: "Some Title Here", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/projects/project1.jpg" },
+        { title: "Some Title Here Maybe Longer", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/projects/project2.jpg" },
+        { title: "Some Title", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/projects/project3.jpg" },
+        { title: "Some Title Here", description: "Description will be here. Not too long. I will add a button to the bottom of this", img: "/images/projects/project4.jpg" },
     ];
 
     // refs for custom arrows
@@ -22,11 +22,11 @@ export default function WorksSnippet() {
     return (
         <section className="relative p-6 py-12">
             {/* <div className="absolute inset-0 bg-[url('/images/works.jpg')] bg-cover bg-center filter brightness-30"></div> */}
-            <div className="relative z-40 w-full px-4 md:px-20">
+            <div className="relative w-full px-4 md:px-20">
 
 
                 <div className="flex flex-col items-start justify-center w-full space-y-3 ">
-                    <h1 className="text-5xl text-[#e3e0e0] font-thin">My Works</h1>
+                    <h1 className="text-4xl text-[#e3e0e0] font-thin">Some Projects From Over The Years</h1>
                     <p className="w-40 md:w-86 text-md leading-6 italic font-serif">
                         Small Description over here that would span 3 lines. Just a bit more description should be fine.
                     </p>
@@ -69,12 +69,12 @@ export default function WorksSnippet() {
                     </Swiper>
                 </div>
 
-                <div className="absolute -top-96 right-0 opacity-30 -z-20">
+                <div className="absolute -right-40 -top-90 opacity-10 rotate-210 dark:invert-94 -z-20">
                     <Image
-                        src={'/images/hero2.jpg'}
+                        src={'/images/hero3.jpg'}
                         alt=""
-                        width={700}
-                        height={700}
+                        width={1000}
+                        height={900}
                     />
                 </div>
             </div>

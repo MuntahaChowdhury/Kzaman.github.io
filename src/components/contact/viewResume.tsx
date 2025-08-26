@@ -9,12 +9,12 @@ export default function ViewResumeOptions() {
             </div>
             <div className="flex gap-2 justify-end items-start gap-4">
                 <a href="/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" >
-                    <button className="cursor-pointer bg-cta  text-lg rounded-3xl py-2 px-8 h-fit">
+                    <button className="cursor-pointer bg-cta hover:brightness-80  text-lg rounded-3xl py-2 px-8 h-fit">
                         View in Browser
                     </button>
                 </a>
                 <a href="/pdf/resume.pdf" download>
-                    <button className="cursor-pointer bg-[#333333] text-[#e3e0e0] text-lg rounded-3xl py-2 px-8 h-fit">Download PDF</button>
+                    <button className="cursor-pointer bg-[#333333] text-[#e3e0e0] text-lg rounded-3xl py-2 px-8 h-fit hover:brightness-80">Download PDF</button>
                 </a>
             </div>
         </section>
