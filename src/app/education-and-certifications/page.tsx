@@ -1,8 +1,8 @@
 "use client"
 
-import CertificationSection from "@/components/educart/certifications"
-import EducationSection from "@/components/educart/education"
-import Skills from "@/components/educart/skills"
+import CertificationSection from "@/components/educert/certifications"
+import EducationSection from "@/components/educert/education"
+import Skills from "@/components/educert/skills"
 import PageHead from "@/components/uiwidget/pagehead"
 
 
