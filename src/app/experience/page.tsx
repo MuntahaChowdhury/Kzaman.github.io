@@ -120,7 +120,7 @@ export default function ExperiencePage() {
                                 <h3 className="text-xl mb-2">{job.company} — {job.location}</h3>
 
                                 {/* Responsibilities */}
-                                <h4>Responsibilities:</h4>
+                                <h4 className="text-cta font-bold">Responsibilities:</h4>
                                 <ul className="pl-10">
                                     {job.responsibilities.map((r, i) => (
                                         <li key={i}>{r}</li>
@@ -128,7 +128,7 @@ export default function ExperiencePage() {
                                 </ul>
 
                                 {/* Achievements */}
-                                <h4>Achievements:</h4>
+                                <h4 className="text-cta font-bold">Achievements:</h4>
                                 <ul className="pl-10">
                                     {job.achievements.map((r, i) => (
                                         <li key={i}>{r}</li>

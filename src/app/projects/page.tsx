@@ -9,6 +9,9 @@ export default function ProjectsPage() {
         <div className="pb-20 min-h-screen">
             <PageHead text="My Projects" />
 
+            <div>
+                
+            </div>
         </div>
     )
 }
